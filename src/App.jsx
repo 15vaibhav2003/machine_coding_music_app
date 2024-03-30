@@ -7,11 +7,17 @@ const App = () => {
     { Name: 'Sanam re', Artist: 'KK' },
     { Name: 'Sanam re', Artist: 'KK' },
     { Name: 'Sanam re', Artist: 'KK' },
+    { Name: 'Sanam re', Artist: 'KK' },
+    { Name: 'Sanam re', Artist: 'KK' },
+    { Name: 'Sanam re', Artist: 'KK' },
+    { Name: 'Sanam re', Artist: 'KK' },
+    { Name: 'Sanam re', Artist: 'KK' },
+    { Name: 'Sanam re', Artist: 'KK' },
   ];
 
   return (
     <div className='w-full h-screen bg-zinc-300 flex flex-col'>
-     <div>
+     <div style={{ height: '10%' }} className='bg-red-700'>
        <Nav />
      </div>
       <div className="flex flex-col items-center justify-center flex-grow">
