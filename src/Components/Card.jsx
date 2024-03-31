@@ -1,6 +1,6 @@
 import React from 'react'
 
-const card = ({values,handle}) => {
+const card = ({values,handle,index}) => {
   const {Name,Artist,Image,fav} = values
   return (
     <div>
@@ -11,7 +11,8 @@ const card = ({values,handle}) => {
            <h3 className='text-xm'>{Artist}</h3>
            </div>
         </div>
-        <button className='   w-32 h-8 bg-orange-400 rounded-full -translate-y-3 translate-x-14 text-white text-xs' onClick={()=>handle()}>{fav === false ? "add" : "favourites" }</button>
+        
+        <button className='   w-32 h-8 bg-orange-400 rounded-full -translate-y-3 translate-x-14 text-white text-xs' onClick={()=>handle(index)}>{fav === false ? "add" : "favourites" }</button>
     </div>
   )
 }

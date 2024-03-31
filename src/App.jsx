@@ -13,7 +13,7 @@ const App = () => {
   ];
 const [songData, setsongData] = useState(data)
 
-const handle=(index)=>{setsongData((prev)=>{return prev.map((item,itemIndex)=>{if(itemIndex==index) return {...item ,fav : !item.fav}})})}
+const handle=(index)=>{setsongData((prev)=>{return prev.map((item,itemIndex)=>{if(itemIndex === index) return {...item ,fav : !item.fav}})})}
 
   return (
     <div className='w-full h-screen bg-zinc-300 flex flex-col py-10'>
@@ -22,7 +22,7 @@ const handle=(index)=>{setsongData((prev)=>{return prev.map((item,itemIndex)=>{i
      </div>
       <div className="flex flex-col items-center justify-center flex-grow">
         <div className="flex flex-wrap justify-center gap-4">
-          {songData.map((item, index) => <Card key={index} values={item} handle={handle}/>)}
+          {songData.map((item, index) => <Card key={index} values={item} handle={handle}  index={index}/>)}
         </div>
       </div>
     </div>
