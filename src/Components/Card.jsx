@@ -1,6 +1,6 @@
 import React from 'react'
 
-const card = ({values}) => {
+const card = ({values,handle}) => {
   const {Name,Artist,Image} = values
   return (
     <div>

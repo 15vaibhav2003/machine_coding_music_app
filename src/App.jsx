@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Components/Card';
 import Nav from './Components/Nav';
 
@@ -11,7 +11,7 @@ const App = () => {
     { Image:'casette.jpg',Name: 'ram na', Artist: 'KK',fav:false },   
     { Image:'one.jpg',Name: 'ram na', Artist: 'KK',fav:false } 
   ];
-  
+const [songData, setsongData] = useState(data)
 const handle=()=>{}
   return (
     <div className='w-full h-screen bg-zinc-300 flex flex-col py-10'>
@@ -20,7 +20,7 @@ const handle=()=>{}
      </div>
       <div className="flex flex-col items-center justify-center flex-grow">
         <div className="flex flex-wrap justify-center gap-4">
-          {data.map((item, index) => <Card key={index} values={item} handle={handle}/>)}
+          {songData.map((item, index) => <Card key={index} values={item} handle={handle}/>)}
         </div>
       </div>
     </div>
