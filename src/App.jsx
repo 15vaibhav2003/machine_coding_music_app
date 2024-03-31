@@ -13,7 +13,8 @@ const App = () => {
   ];
 const [songData, setsongData] = useState(data)
 
-const handle=(index)=>{setsongData((prev)=>{return prev.map((item,itemIndex)=>{if(itemIndex === index) return {...item ,fav : !item.fav}})})}
+const handle=(index)=>{setsongData((prev)=>{return prev.map((item,itemIndex)=>{if(itemIndex === index) return {...item ,fav : !item.fav}
+return item;})})}
 
   return (
     <div className='w-full h-screen bg-zinc-300 flex flex-col py-10'>
