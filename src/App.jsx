@@ -9,8 +9,7 @@ const App = () => {
     { Name: 'mela', Artist: 'atif' },
     { Name: 'ram na', Artist: 'KK' },   
   ];
-
-  const [songData, setdata] = useState(data)
+  
 
   return (
     <div className='w-full h-screen bg-zinc-300 flex flex-col py-10'>
@@ -19,7 +18,7 @@ const App = () => {
      </div>
       <div className="flex flex-col items-center justify-center flex-grow">
         <div className="flex flex-wrap justify-center gap-4">
-          {songData.map((item, index) => <Card key={index} values={item}/>)}
+          {data.map((item, index) => <Card key={index} values={item}/>)}
         </div>
       </div>
     </div>
