@@ -9,10 +9,12 @@ const App = () => {
     { Image:'ed.jpg',Name: 'mela', Artist: 'atif',fav:false },
     { Image:'one.jpg',Name: 'ram na', Artist: 'KK' ,fav:false},   
     { Image:'casette.jpg',Name: 'ram na', Artist: 'KK',fav:false },   
-    { Image:'one.jpg',Name: 'ram na', Artist: 'KK',fav:false } 
+    { Image:'one.jpg',Name: 'ram na', Artist: 'KK',fav:true } 
   ];
 const [songData, setsongData] = useState(data)
-const handle=()=>{}
+
+const handle=()=>{return !fav}
+
   return (
     <div className='w-full h-screen bg-zinc-300 flex flex-col py-10'>
      <div style={{ height: '10%' }} className='' >
